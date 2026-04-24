@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Thathireddy Teja Kumar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00D2FF;
+            --text: #333;
+            --text-light: #666;
+            --bg: #f9f9f9;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 40px 20px;
+            line-height: 1.5;
+        }
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .name-title h1 { font-size: 32px; color: #000; margin-bottom: 5px; }
+        .name-title p { font-size: 18px; color: var(--primary); font-weight: 600; }
+        .contact-info { text-align: right; font-size: 14px; color: var(--text-light); }
+        
+        section { margin-bottom: 30px; }
+        h2 { font-size: 18px; text-transform: uppercase; letter-spacing: 1px; color: #000; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        
+        .item { margin-bottom: 20px; }
+        .item-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 16px; margin-bottom: 5px; }
+        .item-sub { font-style: italic; color: var(--text-light); margin-bottom: 8px; font-size: 14px; }
+        .item ul { margin-left: 20px; font-size: 14px; color: var(--text-light); }
+        .item li { margin-bottom: 5px; }
+
+        .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; font-size: 14px; }
+        .skill-group strong { display: block; margin-bottom: 5px; }
+
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,210,255,0.3);
+        }
+
+        @media print {
+            .print-btn { display: none; }
+            body { padding: 0; background: #fff; }
+            .page { box-shadow: none; border-radius: 0; max-width: 100%; padding: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="print-btn" onclick="window.print()">Print to PDF</button>
+
+    <div class="page">
+        <header>
+            <div class="name-title">
+                <h1>Thathireddy Teja Kumar</h1>
+                <p>Software Engineer | AI/ML Student</p>
+            </div>
+            <div class="contact-info">
+                <p>tejkumarreddy004@gmail.com</p>
+                <p>+91 8885416916</p>
+                <p>Chennai, India</p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>B.Tech in Computer Science and Engineering</span>
+                    <span>2023 — 2027</span>
+                </div>
+                <div class="item-sub">Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, Chennai</div>
+                <ul>
+                    <li>Maintaining a strong academic record with 8.33 CGPA.</li>
+                    <li>Focusing on Data Structures, Algorithms, and Distributed Systems.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Strategic Projects</h2>
+            <div class="item">
+                <div class="item-header">Agent | AI Face Attendance System</div>
+                <ul>
+                    <li>Developed a real-time facial recognition system using OpenCV and VGG-Face.</li>
+                    <li>Built a glassmorphic web dashboard for live monitoring and attendance analytics.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">Smart Campus Event Management</div>
+                <ul>
+                    <li>Architected a full-stack system using Spring Boot 3 and MySQL.</li>
+                    <li>Implemented secure JWT-based authentication and role-based access control.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">Elite Research Summarizer</div>
+                <ul>
+                    <li>Integrated LLM APIs with a FastAPI backend to automate research paper parsing.</li>
+                    <li>Designed an elite frontend for seamless document interaction.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Achievements</h2>
+            <div class="item">
+                <ul>
+                    <li>Solved 200+ DSA problems on LeetCode with focus on interview-level questions.</li>
+                    <li>Hands-on experience with real-world project development lifecycle (design → development → optimization).</li>
+                    <li>Strong understanding of backend systems, database design, and APIs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Arsenal</h2>
+            <div class="skills-grid">
+                <p><strong>Languages:</strong> Java, Python, SQL, JavaScript</p>
+                <p><strong>Frameworks:</strong> Spring Boot, Flask, Node.js, React</p>
+                <p><strong>Tools:</strong> Git, MySQL, SQLite, Docker</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

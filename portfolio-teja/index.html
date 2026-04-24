@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thathireddy Teja Kumar | Software Engineer & AI/ML Enthusiast</title>
+    <meta name="description" content="Portfolio of Thathireddy Teja Kumar, a Computer Science student specializing in Software Engineering, Backend Development, and AI/ML.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Elements -->
+    <div class="noise"></div>
+    <div class="bg-gradient-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container container">
+            <a href="#" class="logo">
+                <span class="logo-text">Thathireddy Teja Kumar</span>
+            </a>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <a href="resume.html" class="btn btn-outline small" target="_blank">Resume</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div class="mobile-nav">
+            <a href="#hero" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content" style="opacity: 1; transform: translateY(0); transition: all 1s ease;">
+                <h1 class="hero-headline">
+                    Building <span class="gradient-text">Scalable Software</span> & <span class="gradient-text">Intelligent Systems</span>
+                </h1>
+                <div class="hero-typing">
+                    I am a <span id="typing-text"></span>
+                </div>
+                <p class="hero-description">
+                    Computer Science student focused on engineering high-performance backend systems and data-driven AI/ML solutions. Aiming for impact in top-tier product engineering teams.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="resume.html" class="btn btn-outline" target="_blank">View Resume</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8.33</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Skills</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#about" class="mouse">
+                <div class="wheel"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Get to Know Me</span>
+                <h2>Behind the Code</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="card-icon"><i class="fas fa-terminal"></i></div>
+                    <h3>The Developer</h3>
+                    <p>I specialize in building robust backend services using <strong>Spring Boot</strong> and <strong>Python</strong>. I believe in clean code, efficient database management, and scalable API designs.</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>The AI Enthusiast</h3>
+                    <p>Passionate about uncovering patterns in data. Experienced in <strong>Machine Learning</strong> and <strong>Data Analysis</strong> with Pandas, working towards building systems that learn and adapt.</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>The Problem Solver</h3>
+                    <p>Active on <strong>LeetCode</strong> and <strong>GitHub</strong>, constantly sharpening my data structures and algorithms knowledge to solve complex engineering challenges efficiently.</p>
+                </div>
+            </div>
+            <div class="education-card glass-card">
+                <div class="edu-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h3>Education Journey</h3>
+                        <p class="institution">Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, Chennai</p>
+                    </div>
+                    <span class="edu-year">2023 - 2027</span>
+                </div>
+                <div class="edu-content">
+                    <p>B.Tech in Computer Science and Engineering with a strong focus on core CS fundamentals, AI/ML, and Full-Stack Development. Maintaining a respectable CGPA of 8.33 while building practical industry-ready tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">What I Bring</span>
+                <h2>Technical Toolkit</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category glass-card">
+                    <h4>Languages</h4>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fab fa-java"></i> Java</div>
+                        <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-pill"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-pill"><i class="fab fa-js"></i> JavaScript</div>
+                    </div>
+                </div>
+                <!-- Frameworks & Tools -->
+                <div class="skill-category glass-card">
+                    <h4>Frameworks & Tools</h4>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fas fa-leaf"></i> Spring Boot</div>
+                        <div class="skill-pill"><i class="fab fa-docker"></i> Docker</div>
+                        <div class="skill-pill"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill-pill"><i class="fas fa-cubes"></i> REST APIs</div>
+                    </div>
+                </div>
+                <!-- Databases & AI -->
+                <div class="skill-category glass-card">
+                    <h4>DBS & AI/ML</h4>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fas fa-server"></i> MySQL</div>
+                        <div class="skill-pill"><i class="fas fa-network-wired"></i> Cassandra</div>
+                        <div class="skill-pill"><i class="fas fa-robot"></i> Machine Learning</div>
+                        <div class="skill-pill"><i class="fas fa-chart-line"></i> Data Analysis</div>
+                    </div>
+                </div>
+                <!-- Frontend -->
+                <div class="skill-category glass-card">
+                    <h4>Web Foundation</h4>
+                    <div class="skill-items">
+                        <div class="skill-pill"><i class="fab fa-html5"></i> HTML5</div>
+                        <div class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3</div>
+                        <div class="skill-pill"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+                        <div class="skill-pill"><i class="fas fa-bolt"></i> Modern UI/UX</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Personal Portfolio</span>
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Agent AI Attendance -->
+                <div class="project-card ats-card">
+                    <div class="project-img-container">
+                        <div class="project-badge-top purple">AI / ML</div>
+                        <img src="../../brain/767db8a0-8803-49a2-9603-b2aab1cc1e35/smart_study_buddy_mockup_1777008872265.png" alt="Agent AI Attendance" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type-tag">Real-Time Facial Recognition</div>
+                        <h3>Agent | AI Attendance</h3>
+                        <p>A flagship deep learning system using OpenCV and VGG-Face for real-time facial recognition. Features a glassmorphic dashboard with live monitoring, attendance analytics, and secure administrative control.</p>
+                        <div class="tech-stack-flex">
+                            <span class="tag">Python</span>
+                            <span class="tag">DeepFace</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">OpenCV</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/tejkumarreddy980/face-attendance-system" target="_blank" class="btn-text">Code <i class="fab fa-github"></i></a>
+                            <a href="https://github.com/tejkumarreddy980/face-attendance-system" target="_blank" class="btn-text">Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Smart Campus EMS -->
+                <div class="project-card ats-card">
+                    <div class="project-img-container">
+                        <div class="project-badge-top">Fullstack</div>
+                        <img src="../../brain/767db8a0-8803-49a2-9603-b2aab1cc1e35/inventory_system_mockup_1777008892505.png" alt="Smart Campus EMS" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type-tag">Event Management System</div>
+                        <h3>Smart Campus EMS</h3>
+                        <p>A comprehensive Event Management System for universities. Implements robust Spring Security for role-based access, automated registration workflows, and deep analytics into student engagement.</p>
+                        <div class="tech-stack-flex">
+                            <span class="tag">Spring Boot 3</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">JPA</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/tejkumarreddy980/smart-campus-ems" target="_blank" class="btn-text">Code <i class="fab fa-github"></i></a>
+                            <a href="https://github.com/tejkumarreddy980/smart-campus-ems" target="_blank" class="btn-text">Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Elite Research Summarizer -->
+                <div class="project-card ats-card">
+                    <div class="project-img-container">
+                        <div class="project-badge-top blue">AI / NLP</div>
+                        <img src="../../brain/767db8a0-8803-49a2-9603-b2aab1cc1e35/api_documentation_mockup_1777008913621.png" alt="Elite Research Summarizer" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type-tag">Academic Analysis Tool</div>
+                        <h3>Elite Research Summarizer</h3>
+                        <p>An AI-powered tool for summarizing complex research papers, featuring an elite UI, seamless document parsing, and high-precision NLP models for researchers.</p>
+                        <div class="tech-stack-flex">
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API Integration</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/tejkumarreddy980/ai-research-elite" target="_blank" class="btn-text">Code <i class="fab fa-github"></i></a>
+                            <a href="https://github.com/tejkumarreddy980/ai-research-elite" target="_blank" class="btn-text">Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Relational Inventory Control -->
+                <div class="project-card ats-card">
+                    <div class="project-img-container">
+                        <div class="project-badge-top orange">Backend</div>
+                        <img src="../../brain/767db8a0-8803-49a2-9603-b2aab1cc1e35/neuraltrack_ai_mockup_1777008932497.png" alt="Relational Inventory Control" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type-tag">Enterprise Solution</div>
+                        <h3>Relational Inventory Control</h3>
+                        <p>Enterprise stock tracking solution with a complex relational schema. Manages multi-supplier transactions, purchase orders, and audit trails with real-time stock-out alerts.</p>
+                        <div class="tech-stack-flex">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">Audit Trails</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/tejkumarreddy980/inventory-system" target="_blank" class="btn-text">Code <i class="fab fa-github"></i></a>
+                            <a href="https://github.com/tejkumarreddy980/inventory-system" target="_blank" class="btn-text">Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Milestones</span>
+                <h2>Key Achievements</h2>
+            </div>
+            <div class="achievements-list glass-card">
+                <ul class="ach-items">
+                    <li>
+                        <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="ach-text">
+                            <strong>DSA Excellence:</strong> Solved 200+ DSA problems on LeetCode with focus on interview-level questions.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ach-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="ach-text">
+                            <strong>Full-Stack Mastery:</strong> Designed and deployed a full-stack web application with CRUD operations and optimized database performance.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ach-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="ach-text">
+                            <strong>AI Innovation:</strong> Currently building an AI-based productivity tracking system using Python and data analysis.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ach-icon"><i class="fas fa-server"></i></div>
+                        <div class="ach-text">
+                            <strong>Systems Architecture:</strong> Demonstrated strong understanding of backend systems, database design, and APIs.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ach-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <div class="ach-text">
+                            <strong>Project Lifecycle:</strong> Hands-on experience with real-world project development lifecycle (design → development → optimization).
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profiles Section -->
+    <section id="profiles" class="profiles section">
+        <div class="container">
+            <div class="profiles-grid">
+                <a href="https://leetcode.com/u/tejakumar_thathireddy" target="_blank" class="profile-card glass-card">
+                    <div class="profile-icon"><i class="fas fa-code"></i></div>
+                    <div class="profile-info">
+                        <h3>LeetCode</h3>
+                        <p>Algorithms & Problem Solving</p>
+                    </div>
+                    <div class="chevron"><i class="fas fa-chevron-right"></i></div>
+                </a>
+                <a href="https://github.com/tejkumarreddy980" target="_blank" class="profile-card glass-card">
+                    <div class="profile-icon"><i class="fab fa-github"></i></div>
+                    <div class="profile-info">
+                        <h3>GitHub</h3>
+                        <p>Open Source & Project Repos</p>
+                    </div>
+                    <div class="chevron"><i class="fas fa-chevron-right"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/in/thathireddy-teja-kumar" target="_blank" class="profile-card glass-card">
+                    <div class="profile-icon"><i class="fab fa-linkedin"></i></div>
+                    <div class="profile-info">
+                        <h3>LinkedIn</h3>
+                        <p>Professional Network</p>
+                    </div>
+                    <div class="chevron"><i class="fas fa-chevron-right"></i></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Get In Touch</span>
+                <h2>Let's Build Something Great</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>tejkumarreddy004@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8885416916</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Avadi, Chennai, Tamil Nadu</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <form id="contact-form" class="contact-form glass-card" action="#">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Collaboration / Job Inquiry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Thathireddy Teja Kumar. All Rights Reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/tejkumarreddy980" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/thathireddy-teja-kumar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Typed.js for typing effect -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
